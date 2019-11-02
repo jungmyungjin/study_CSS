@@ -1,0 +1,36 @@
+※ 시작문자가 '*'인 경우 개인적인 정리를 의미함
+
+>> 웹의 구성
+구조 : 웹 콘텐츠에 의미를 부여하고 구조를 형성 → HTML
+표현 : 시각적인 디자인과 레이아웃 표현 → CSS
+행위 : 모든 front-end의 브라우저 상호작용을 담당 → JavaScript
+
+
+
+>> 선택자와 선언자 (Selector and Declaration)
+http://www.nextree.co.kr/p8468/
+* Selector(선택자) : css에서 꾸밈을 설정할 태그
+* Declaration(선언자) : 꾸밈 설정할 내용
+
+
+
+>> 선택자의 종류
+ - tag selector
+	태그별로 묶어서 꾸밀떄 사용
+ - id selector
+	각 고유의 id로 따로 설정할때 사용
+ - class selector
+	공통된 class로 묶어서 설정할 때 사용
+
+
+
+>> 선택자의 다양한 사용법
+http://flukeout.github.io/
+이 사이트로 공부하다보면 정규표현식만큼 원하는 선택자를 잡을수 있도록 문법이 많이 있다.
+
+
+
+>> 가상 클래스 선택자 (pseudo class selector)
+클래스 선택자는 아니지만 엘리먼트들의 상태에 따라서 클래스 선택자처럼 여러 엘리먼트를 선택할 수 있음
+
+

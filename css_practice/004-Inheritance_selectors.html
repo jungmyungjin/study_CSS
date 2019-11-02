@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    /* "ul 하위 li" 조건에 맞을 경우 */
+    ul li {
+      color: red;
+    }
+
+    /* lecture 바로 밑 li에만 효과를 주는것 */
+    #lecture>li {
+      border: 1px solid red;
+    }
+
+    /* 같은 내용은 , 로 이어서 사용 가능 */
+    ul,
+    ol {
+      background-color: powderblue;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+  <ol id="lecture">
+    <li>HTML</li>
+    <li>CSS</li>
+    <ol>
+      <li>selector</li>
+      <li>declaration</li>
+    </ol>
+    <li>JavaScript</li>
+  </ol>
+</body>
+
+</html>
