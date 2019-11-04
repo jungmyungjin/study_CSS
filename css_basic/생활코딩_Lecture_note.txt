@@ -43,3 +43,13 @@ http://flukeout.github.io/
 >> Stylish
 기존에 있던 웹사이트에 있는 css를 커스컴해서 변경된 내용을 적용시켜주는 브라우저 앱. 색상을 변경하거나, 광고를 없애버리거나... 기존에 다른 사람이 만들어놓은 테마를 적용할 수도 있다.
 * 강의 댓글 보니 Stylish는 보안정책때매 막혔고, Stylus로 대체 사용 가능하다고 함
+
+
+
+>> Inline tag VS Block level tag
+Inline tag : 화면의 일부를 차지하는 태그
+Block level tag : 화면 전체를 사용하는 태그
+
+
+
+>>

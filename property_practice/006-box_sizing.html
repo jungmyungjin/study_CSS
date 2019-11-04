@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    div {
+      margin: 10px;
+      width: 150px;
+    }
+
+    #small_1,
+    #small_2 {
+      border: 10px solid black;
+    }
+
+    #large_1,
+    #large_2 {
+      border: 30px solid black;
+    }
+
+    #small_1,
+    #large_1 {
+      /* 둘다 width(폭) 사이즈가 동일하게 지정되어 있지만,
+       폭 사이즈에 border는 포함되어 있지 않음으로
+       차지하는 크기가 다르다
+       */
+    }
+
+    #small_2,
+    #large_2 {
+      /*
+      border를 포함하여 width를 설정하는 속성
+      */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Unused box-sizing</p>
+  <div id="small_1">Hello</div>
+  <div id="large_1">Hello</div>
+  <p>Used box-sizing</p>
+  <div id="small_2">Hello</div>
+  <div id="large_2">Hello</div>
+</body>
+
+</html>

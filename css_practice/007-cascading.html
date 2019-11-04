@@ -1,0 +1,37 @@
+<html>
+<!--
+우선순위
+0. !important;
+1. Style attribute
+2. id selector
+3. class selector
+4. tag selector
+
+해당되는 범위가 넓어질수록 우선순위에서 밀려날 수 있음
+ -->
+
+<head>
+  <style media="screen">
+    li {
+      color: red;
+    }
+
+    #idsel {
+      color: blue !important;
+    }
+
+    .classsel {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>html</li>
+    <li id="idsel" class="classsel" style="color:powderblue">css</li>
+    <li>javascript</li>
+  </ul>
+</body>
+
+</html>
