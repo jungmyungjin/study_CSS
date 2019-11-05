@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    #parent {
+      /*
+      부모태그의 시각적인 효과가 사라지면
+      자식태그와 부모태그의 마진값이 합쳐진다.
+      */
+      /*border: 4px solid tomato;*/
+      margin-top: 100px;
+    }
+
+    #child {
+      background-color: powderblue;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="parent">
+    <div id="child">
+      Hello world
+    </div>
+  </div>
+</body>
+
+</html>

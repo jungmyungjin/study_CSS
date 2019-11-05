@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    /*
+      h1 두개의 태그에 대한 마진이 100px 이지만,
+      크롬 개발자도그를 통하여 확인해 보면
+      word_1 아래의 마진값과, world_2 위의 마진값을 공유하고 있는걸 알 수 있다.
+    */
+    h1 {
+      border: 1px solid blue;
+      margin: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="word_1">Hello world</h1>
+  <h1 id="word_2">Hello world</h1>
+</body>
+
+</html>
