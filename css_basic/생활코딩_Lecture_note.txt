@@ -56,3 +56,77 @@ Block level tag : 화면 전체를 사용하는 태그
 1. 두개의 다른 태그에서 마진을 공유할 수 있다.(겹쳐질 수 있다)
 2. 부모 자식간의 마진도 겹쳐질 수 있다.
 3. (top-margin, bottom-margin이 따로 있는경우) 시각적인 요소가 없는 태그의 마진은 마진중의 값이 큰것을 채택한다.
+
+
+
+>> 포지션 (position)
+position
+- static(Default)
+  기본값(position 설정이 안된 경우 기본적으로 설정되는 값).
+  offset 설정이 안됨
+  
+- relative
+  기존 태그의 위치를 기준으로 위치를 수정하고 싶을때
+  
+
+- absolute
+  포지션이 static이 아닌 parents 태그의 위치를 기준으로 위치를 설정함
+  상위 포지션이 없으면 html태그를 기준으로 잡음
+  
+  <offset을 left:0px, top:0px로 설정했을 경우>
+  parents 태그가 static이 아닌 parents 태그의 시작위치를 가리킴
+  (부모 태그가 static인 경우 더 상위 부모의 값을 확인함)
+  
+  <child 태그의 포지션이 absolute인 경우> 
+    parents 태그와의 상속 관계가 사라지며, 독립적인 존재로 인식됨
+    offset 값을 설정하지 않은 경우 기본 위치는 부모 컨텐츠 바로 아래에 위치하게 됨
+
+- fixed
+  html 전체위치중 offset으로 설정한 위치에 고정적으로 존재하게 됨
+  
+  <offset을 left:0px, top:0px로 설정했을 경우>
+  html 페이지에서의 시작 위치를 가리킴
+  
+  <child 태그의 포지션이 fixed인 경우> 
+    parents 태그와의 상속 관계가 사라지며, 독립적인 존재로 인식됨
+	offset 값을 설정하지 않은 경우 기본 위치는 부모 컨텐츠 바로 아래에 위치하게 됨
+
+*offset : 떨어진 정도
+
+
+
+>> flex
+layout을 나눌때 자주 사용하는 태그
+
+- display:flex
+  flex를 구성하려 할때, 정렬하려는 요소의 부모 요소에 선언해야함
+
+- flex-direction
+  각 레이어를 나눌 방향을 정하는 것
+  
+  flex-direction:row
+  flex-direction:row-revers
+  flex-direction:column
+  flex-direction:column-reverse
+  
+- flex-basis
+  해당 레이어의 크기를 정함
+  
+  flex-basis:(n)px
+
+- flex-grow
+  해당 레이어가 차지하는 비율(크기)을 정함
+
+  flex-grow:0 (Default)
+  flex-grow:(n)
+  
+- flex-shrink
+  창크기를 줄였을때 레이어별 축소시킬 비율을 정함
+  
+  flex-shrink:1 (Default)
+  flex-shrink:0
+  flex-shrink:(n)
+
+
+읽어두면 좋은 자료:
+https://d2.naver.com/helloworld/8540176

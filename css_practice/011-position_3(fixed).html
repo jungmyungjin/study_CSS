@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="lt">
+
+<head>
+  <style media="screen">
+    body {
+      /* fixed 포지션 때문에 가려진 페이지만큼을 띄워주는 태그(?) */
+      padding-top: 30px;
+    }
+
+    #parent,
+    #other {
+      border: 5px solid tomato;
+    }
+
+    #large {
+      height: 10000px;
+      background-color: yellow;
+    }
+
+    #me {
+      /* position:fixed
+      스크롤을 내려도 고정되는 위치 */
+      background-color: black;
+      color: white;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      /* bottom:0; */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="other">other</div>
+  <div id="parent">
+    parent
+    <div id="me">me</div>
+  </div>
+  <div id="large">large</div>
+</body>
+
+</html>

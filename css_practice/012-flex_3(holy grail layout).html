@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border-bottom: 1px solid gray;
+      padding-left:20px;
+      /* padding = border 라인 안쪽에 여백을 두는 것 */
+    }
+
+    footer {
+      border-top: 1px solid gray;
+      padding:20px;
+      text-align:center;
+      /* text-align = 글 정렬 */
+    }
+
+    .content {
+      /* 중간 내용을 가로로 분류하기 위하여 flex를 줌 */
+      display: flex;
+    }
+
+    .content nav {
+      border-right: 1px solid gray;
+    }
+
+    .content aside {
+      border-left: 1px solid gray;
+    }
+
+    nav,aside {
+      /* 창 크기를 줄여도 nav와 aside 부분은 크기가 고정되도록 함 */
+      flex-badsis: 150px;
+      flex-shrink: 0;
+    }
+    main{
+      padding:10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>생활 명진코딩</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+        </ul>
+      </nav>
+      <main>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eaque iste facilis quis, dolor, quibusdam nam soluta quam quo, quas ipsam laudantium sunt. Maxime commodi voluptatum quisquam sapiente eaque, accusamus.
+      </main>
+      <aside>
+        <!-- aside : 덜 중요한 것 -->
+        AD
+      </aside>
+    </section>
+    <footer>
+      <a href="https://google.com">무엇이든 물어보세요</a>
+    </footer>
+  </div>
+</body>
+
+</html>

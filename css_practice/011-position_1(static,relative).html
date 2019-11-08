@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    html {
+      border: 5px solid gray;
+    }
+
+    div {
+      border: 5px solid tomato;
+      margin: 10px;
+    }
+
+    #me {
+      /*position : static; (Default, 위치와 관련된 설정을 하지 않은 상태)  */
+      position: relative;  /*상대적인*/
+
+
+      /*
+        offset 우선순위
+        left < right
+        bottom < top
+        */
+      left: 100px;
+      right: 100;
+      top: 100px;
+      bottom: 100;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="other">other</div>
+  <div id="parent">
+    parent
+    <div id="me">me</div>
+  </div>
+</body>
+
+</html>

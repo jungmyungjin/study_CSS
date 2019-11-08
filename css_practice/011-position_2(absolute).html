@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    #parent,
+    #other,
+    #grand {
+      border: 5px solid tomato;
+    }
+
+    #grand {
+      position: relative
+    }
+
+    #me {
+      /* absolute
+       - static이 아닌 부모의 포지션 값을 기준으로 절대적인 위치를 잡는다.
+      - 부모 속성(element)과의 관계를 끊게된다.
+        자식 속성이 독립이 되어 부모 속성도 자식 컨텐츠가 포함되지 않은 본래의 크기로 돌아간다.(자식도 부모의 속성값을 상속받다가 독립후엔 자기자신의 값으로 돌아가게 됨)
+      - 포지션이 absolute로 지정된 속성을 offset 값을 설정하지 않을 경우 기본 위치는 부모 컨텐츠바로 아래에 위치하게 된다.
+      */
+      background-color: black;
+      color: white;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="other">other</div>
+  <div id="grand">
+    grand
+    <div id="parent">
+      parent
+      <div id="me">me</div>
+    </div>
+  </div>
+</body>
+
+</html>

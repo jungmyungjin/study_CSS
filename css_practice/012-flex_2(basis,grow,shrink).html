@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    .container {
+      background-color: powderblue;
+      height: 200px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .item {
+      background-color: tomato;
+      color: white;
+      border: 1px solid white;
+
+      flex-grow:0;
+      /* flex-grow = 여백을 어떻게 채울건지 설정 */
+      /* 각각의 엘리먼트들이 전체 영역에서 전체/n으로 나눠 갖는것 */
+    }
+
+    .item:nth-child(1){
+      flex-basis:150px;
+      flex-shrink:1;
+    }
+
+    .item:nth-child(2) {
+      /* 클래스명이 item 인 것들중 두번째 것에 대한 설정하는 선택자 */
+
+      /* flex-basis: 200px; */
+      /* flex 방향에 대한 크기 지정 */
+
+      /* flex-grow:2; */
+      /* cascading 우선순위에 의하여 우선적으로 인식되므로, 두번째 엘리먼트는 전체분의/2를 갖게된다. */
+
+      flex-basis: 150px;
+      flex-shrink:2;
+      /* shrink(수축)
+      1 (Default) : 창크기를 줄였을때 해당 부분이 1의 비율만큼 이 부분이 줄어든다.
+      0 : 창크기를 줄였을때 줄인만큼은 안보이게 된다.
+      n : 창크기를 줄였을때 n의 비율만큼 줄어든다. */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+
+</html>
