@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 600px;
+      < !-- 기존 float 설정된 것에 div로 틀을 씌우고 크기를 주어 창 크기를 작게 했을때에도 틀이 깨지지 않게 고정시킴 -->border: 1px solid gray;
+
+      margin: auto;
+      < !-- 화면 가운데에 위치 하도록 하는 것 -->
+    }
+
+    header {
+      border-bottom: 1px solid gray;
+    }
+
+    nav {
+      float: left;
+      width: 120px;
+      border-right: 1px solid gray;
+    }
+
+    article {
+      float: left;
+      width: 360px;
+      border: 1px solid gray;
+      margin: -1px;
+    }
+
+    aside {
+      float: left;
+      width: 120px;
+      border-left: 1px solid gray;
+    }
+
+    footer {
+      clear: both;
+      border-top: 1px solid gray;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>CSS</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>position</li>
+        <li>float</li>
+        <li>flex</li>
+      </ul>
+    </nav>
+
+    <article>
+      <h2>float</h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque atque autem corporis omnis, recusandae blanditiis? Aspernatur consectetur cumque dignissimos tempora magnam ipsum facilis molestias delectus sequi. Laudantium maxime esse
+      recusandae
+      magnam, earum fugiat eius voluptates omnis nam veritatis aliquam vitae facilis repellat, aperiam ab pariatur. Laudantium ut autem vitae, quis.
+    </article>
+
+    <aside>
+      ad
+    </aside>
+
+    <footer>
+      Copyleft
+    </footer>
+  </div>
+</body>
+
+</html>
