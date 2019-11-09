@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style media="screen">
+    div {
+      border: solid 1px gray;
+      background-color: powderblue;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main {
+      display: flex;
+      flex: direction:row;
+    }
+
+    .box>.item {
+      background-color: coral;
+      flex-basis: 10px;
+    }
+
+    .main>.item {
+      height: 500px;
+    }
+
+    .main .item:nth-child(1) {
+      flex-grow: 1;
+    }
+
+    .main .item:nth-child(2) {
+      flex-grow: 2;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="box">
+    <div class="item">1a</div>
+    <div class="item">2a</div>
+    <section class="main">
+      <div class="item">3a</div>
+      <div class="item">4a</div>
+    </section>
+  </div>
+</body>
+
+</html>
