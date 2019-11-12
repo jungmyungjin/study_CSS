@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    .blend {
+      height: 400px;
+      border: 5px solid;
+      /* background-color: red; */
+
+      background-color: rgba(255, 0, 0, 0.5);
+      /* rgba = red,green,blue,투명도 */
+
+      background-size: cover;
+      background-image: url('image_box/sheep.jpg');
+      /* background-blend-mode: difference; */
+
+      background-blend-mode: saturation;
+      /* 백그라운드 이미지와 필터를 블랜드해서 선택한 모드에 따라 무드를 바꾸는 것 */
+      transition: background-color 10s;
+    }
+
+    .blend:hover {
+      background-color: rgba(255, 0, 0, 1);
+      transition: background-color 5s;
+      /* transition : 5초동안 서서히 효과 적용 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blend">
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    /*
+     filter 효과는 css3부터 적용된 것이고,
+    비교적 최근 기술이므로 적용범위가 한정적일 수 있으므로 사용 시 주의해야 한다.
+    */
+    img {
+      /*
+      transition : 전환
+      transition all 1s : 전환효과를 1초동안 서서히 준다.
+     */
+      transition all 1s;
+    }
+
+    img:hover {
+      /* hover : 마우스를 갖다 댔을때 설정 */
+      -webkit-filter: grayscale(80%) blur(2px);
+      -o-filter: graycsale(80%) blur(2px);
+      filter: grayscale(80%) blur(2px);
+    }
+
+    h1 {
+      /* 글자에 주는 태그, 블러처
+    blur: Npx  */
+      -webkit-filter: blur(3px);
+      -o-filter: blur(3px);
+      filter: blur(3px);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>SHEEP!!!!!!!!!!!!</h1>
+  <img src="image_box/sheep.jpg" alt="">
+</body>
+
+</html>

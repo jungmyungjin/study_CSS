@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    h1 {
+      /*
+      Transform로 모양 형태를 변경하는 방법은 2차원, 3 차원적 등 여러가지 방법이 있을 수 있으며,
+      여러 라이브러리로 지원이 가능하여 하고싶은 액션을 찾아보는것이 중요함
+      */
+      background-color: deepskyblue;
+      color: white;
+      display: inline-block;
+      padding: 50px;
+      font-size: 3rem;
+      margin: 100px;
+    }
+
+    h1:hover {
+      transform:
+        scale(2);
+      /* transform-origin: left bottom; */
+      transform-origin: 100% 100%;
+      /* x축 y축 중 퍼질 위치. 100%는 x축 맨 오른쪽과 y축 맨 아래쪽 */
+      transition: all 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello Transform!</h1>
+</body>
+
+</html>

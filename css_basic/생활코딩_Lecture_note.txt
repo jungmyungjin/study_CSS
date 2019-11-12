@@ -222,3 +222,14 @@ https://d2.naver.com/helloworld/8540176
 
 참고하면 좋은 자료:
 https://opentutorials.org/module/2398/13712
+
+
+
+
+>> SVG
+svg는 백터(vector) 이미지를 표현하기 위한 포맷으로 w3c에서 만든 백터 이미지 표준
+
+svg를 사용하여 백터 이미지를 css에서 생성/변환이 가능함
+
+
+
