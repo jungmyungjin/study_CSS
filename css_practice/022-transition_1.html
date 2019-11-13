@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /*
+     transition:전환
+     전환효과와 관련된 기능이 있음
+    */
+
+    a {
+      font-size: 3rem;
+
+      display: inline-block;
+      /*
+       transform 속성은 element(여기선 a에 해당)가
+       block level elment 혹은 inline-block element에서만 동작함
+       (inline element에서는 미동작)
+      */
+
+      /* transition-property:all; */
+      /* a를 클릭했을때의 모든(all) 장면 전환에 대한 효과 적용 */
+
+      /* trnasition-property: font-size transform; */
+      /* a를 클릭했을때의 font-size와 transform의 장면 전환에 대한 효과 적용 */
+
+      /* transition-duration:0.1s; */
+      /* 장면 전환의 지연시간 설정 */
+
+      /* transition: all 0.1s; */
+      /* 모든 장면전환에 대해 0.1초동안 전환한다.
+      위의 두개의 설정을 한번에 설정하는 방법 */
+
+      transition: font-size 1s, transform 0.1s;
+      /* font-size와 transform의 장면전환 시간을 각각 한줄로 설정하는 방법 */
+
+      transition-delay: 1s;
+      /* 1초 뒤에 동작하도록 함 */
+    }
+
+    a:active {
+      transform: translate(20px, 20px);
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">Click</a>
+  <!-- href="#"인 경우 클릭했을때 링크로 이동하지 않도록 해진다. -->
+</body>
+
+</html>
