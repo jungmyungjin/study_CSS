@@ -233,3 +233,22 @@ svg를 사용하여 백터 이미지를 css에서 생성/변환이 가능함
 
 
 
+>> <link> 와 @import
+: 분리된 css 파일을 html에 사용할 수 있도록 집어넣을때 쓰이는 태그
+
+- @import
+  스타일 시트를 포함한 css 매커니즘
+  link에선 불가능한 css 파일 내에서 다른 css를 가져올 수 있도록 함
+  
+
+- <link>
+  HTML 매커니즘
+  여러 CSS를 비동기적으로 로드하고 해석할 수 있습니다
+
+- 차이점
+  브라우저를 이 두개를 다르게 처리하게 되는데 <link>가 성능 측면에서 더 이점이 있다고 함
+  
+참조 : https://stackoverflow.com/questions/1022695/difference-between-import-and-link-in-css
+  
+
+
